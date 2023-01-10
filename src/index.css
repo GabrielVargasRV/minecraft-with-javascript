@@ -1,0 +1,67 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+
+body{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.pointer{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+  text-shadow: 1px 1px #000;
+  opacity: .5;
+}
+
+.texture-selector{
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 90%;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+
+  opacity: 0.8;
+}
+
+.texture-selector img{
+  width: 60px;
+  height: 60px;
+  image-rendering: pixelated;
+  border: 0px solid black;
+}
+
+.texture-selector img.selected{
+  border: 3px solid black;
+}
